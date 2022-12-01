@@ -1,0 +1,40 @@
+<p class=>Ім'я</p>
+				<div class="input__name">
+					<input type="text" name="username"></input>
+					<svg width="11" height="11" viewBox="0 0 32 32">
+				 		<use href=>
+				 		</use>
+					</svg>
+				</div>
+			</div>
+			<div>
+				<p class="m_text">Телефон</p>
+				<div class="input__name">
+					<input type="text" name="userphone"></input>
+					<svg width="11" height="11" viewBox="0 0 32 32">
+						<use href=></use>
+				   </svg>
+				</div>
+			</div>
+			<div>
+				<p class="m_text">Пошта</p>
+				<div class="input__name">
+					<input type="text" name="usere-mail"></input>
+					<svg width="11" height="11" viewBox="0 0 32 32">
+						<use href=></use>
+				   </svg>
+				</div>
+			</div>
+			<div>
+				<p class="m_text">Коментар</p>
+				<div class="text__area">
+					<textarea placeholder="Введіть текст"></textarea>
+				</div>
+			</div>
+			<div class="check">
+				<input type="checkbox">Погоджуюся з розсилкою та приймаю <a class="checkbox_m" href="#">Умови
+					договору</a></input>
+			</div>
+			<button type="button" class="btn-hero">Відправити</button>
+		</div>
+	</div>
