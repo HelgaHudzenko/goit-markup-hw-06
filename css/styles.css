@@ -436,9 +436,7 @@ nav:active {
 	top: 50%;
 	left: 42px;
 	transform: translateY(-50%);
-  
 	display: block;
-  
 	transition: transform var(--anim-fast);
   }
   
@@ -1044,6 +1042,79 @@ transition: background-color 250ms linear, fill 250ms linear;
 .footer-contacts .footer-adress:focus {
 	color: var(--accent-txt-cl);
 }
+
+.send-form {
+	margin-top: 12px;
+}
+
+.footer-send-btn {
+	padding: 10px 28px;
+	background-color: var(--button-bg-cl);
+	color: var(--light-txt-cl);
+}
+.footer-send-btn:hover
+.footer-send-btn:focus{
+	
+}
+
+.footer-form {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+.send-form-label {
+top: 50%;
+left: 42px;
+transform: translateY(-50%);
+transition: transform;
+font-weight: 400;
+font-size: 16px;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.icon-send {
+	margin-left: 10px;
+	fill: #EEEEEE;
+}
+
+.label-send {
+	display: flex;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--light-txt-cl);
+}
+
+.input-field-send {
+	padding: 15px;
+	width: 358px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: #2f303a;
+	color: var(--light-txt-cl);
+}
+
+.input-field-send:focus {
+	border-color: var(--button-bg-cl);
+	outline: none;
+}
+
+.input-field-send::placeholder {
+	font-size: 16px;
+	line-height: 1.25;
+}
+
+
+
+
+/* Portfolio */
 
 .shop {
 	border-top: 1px solid #ECECEC;
