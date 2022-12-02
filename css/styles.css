@@ -1052,15 +1052,37 @@ transition: background-color 250ms linear, fill 250ms linear;
 	background-color: var(--button-bg-cl);
 	color: var(--light-txt-cl);
 }
-.footer-send-btn:hover
-.footer-send-btn:focus{
-	
+
+.footer-send-btn:hover {
+	background: #2196f3;
 }
 
-.footer-form {
+  .footer-send-btn::before {
+	box-shadow: 0 0 0 1px #2196f3, 0 0.5em 0 0 #EEEEEE;
+	transform: translate3d(0, 0.5em, -1em);
+}
+
+.footer-send-btn:active {
+	background: #2196f4;
+	transform: translate3d(0em, 0.75em);
+  }
+
+  .footer-send-btn:active::before {
+	box-shadow: 0 0 0 2px #2196f3, 0 0 #EEEEEE;
+	transform: translate3d(0, 0, -1em);
+  }
+
+.footer-form-send {
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-end;
+}
+.footer_form {
+	position: absolute;
+	width: 570px;
+	height: 86px;
+	left: 815px;
+	top: 2500px;
 }
 
 .send-form-label {
