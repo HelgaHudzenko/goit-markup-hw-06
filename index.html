@@ -408,7 +408,7 @@
 					</address>
 				</div>
 				<div class="footer__inner-soc">
-					<p>Приєднуйтесь</p>
+					<p class="footer-name-p">Приєднуйтесь</p>
 					<ul class="footer__soc-row">
 						<li>
 							<a class="footer_social" href="#">
@@ -445,22 +445,26 @@
 					</ul>
 				</div>
 				<div class="footer_form">
-					<p>Підпишіться на розсилку</p>
-					<div class="send-form" >
-						<form class="footer-form-send" >
-							<label class="label-send">
-								<input class="input-field-send" type="email" name="user-mail"
-									required 
-									placeholder="E-mail"/>
-							</label>
-						</form> 
-						<button class="footer-send-btn" type="submit">
-						 Підписатися 
-							<svg class="icon-send" width="20" height="20">
-								<use href="./images/icons.svg#icon-teleg-wb" ></use>
-							</svg>
-						</button>
-					</div>
+					<p class="footer-send-p">Підпишіться на розсилку</p>
+					<ul class="send-form">
+						<li>
+							<form class="footer-form-send" >
+								<label class="label-send">
+									<input class="input-field-send" type="email" name="user-mail"
+										required 
+										placeholder="E-mail"/>
+								</label>
+							</form> 
+						</li>
+						<li>
+							<button class="footer-send-btn" type="submit">
+								Підписатися 
+								<svg class="icon-send" width="20" height="20">
+									<use href="./images/icons.svg#icon-teleg-wb" ></use>
+								</svg>
+							</button>
+						</li>
+					</ul>	
 				</div>
 			</div>
 		</div>
@@ -476,7 +480,7 @@
 				</svg>
 			</button>
 			<form class="register-form" name="register-form">
-				<strong class="register-form-title">Leave your details, we will call you back</strong>
+				<strong class="register-form-title">Залиште свої дані, ми передзвонимо</strong>
 			<div class="register-form-group" role="group">
 				<label class="register-form-field">
 					<input
@@ -484,84 +488,57 @@
 					  type="text"
 					  name="user-name"
 					  required
-					  minlength="3"
-					  placeholder="&nbsp;"
+					  placeholder=""
 					/>
 					<span class="register-form-label">Ім'я</span>
-					<svg class="register-form-icon" width="22" height="22">
+					<svg class="register-form-icon" width="18" height="18">
 					  <use href="./images/icons.svg#icon-people"></use>
 					</svg>
-					<svg class="register-form-notification" width="22" height="22">
-					  <use class="warning" href="./images/sprite.svg#icon-warning"></use>
-					  <use class="success" href="./images/sprite.svg#icon-success"></use>
-					</svg>
 				  </label>
-	  
 				  <label class="register-form-field">
 					<input
 					  class="register-form-input"
 					  type="text"
 					  name="user-phone"
-					  required
-					  minlength="12"
-					  maxlength="12"
-					  placeholder="+38 099 999 99 99"
+					  required 
+					  placeholder=""
 					/>
 					<span class="register-form-label">Телефон</span>
-					<svg class="register-form-icon" width="22" height="22">
+					<svg class="register-form-icon" width="18" height="18">
 					  <use href="./images/icons.svg#icon-mob-black"></use>
 					</svg>
-					<svg class="register-form-notification" width="22" height="22">
-					  <use class="warning" href="./images/sprite.svg#icon-warning"></use>
-					  <use class="success" href="./images/sprite.svg#icon-success"></use>
-					</svg>
 				  </label>
-	  
 				  <label class="register-form-field">
 					<input
 					  class="register-form-input"
 					  type="email"
 					  name="user-mail"
+					  placeholder=""
 					  required
-					  placeholder="example@mail.com"
 					/>
 					<span class="register-form-label">Пошта</span>
-					<svg class="register-form-icon" width="22" height="22">
+					<svg class="register-form-icon" width="18" height="18">
 					  <use href="./images/icons.svg#icon-mail-black"></use>
 					</svg>
-					<svg class="register-form-notification" width="22" height="22">
-					  <use class="warning" href="./images/sprite.svg#icon-warning"></use>
-					  <use class="success" href="./images/sprite.svg#icon-success"></use>
-					</svg>
 				  </label>
-	  
 				  <label class="register-form-field">
-					<span class="register-form-label">Коментар</span>
-					<textarea
-					  class="register-form-message"
-					  name="user-message"
-					  rows="5"
-					  placeholder="Enter the text"
-					></textarea>
+					<span class="register-form-feedback">Коментар</span>
+					<div class="text__area">
+						<textarea class="modal-textarea" name="feedback" rows="5" placeholder="Введіть текст"></textarea>
+					</div>
 				  </label>
 				</div>
-	  
 				<label class="register-form-agreement">
 				  <input
 					class="register-form-checkbox visually-hidden"
 					type="checkbox"
 					name="user-agreement"
 				  />
-				  <svg class="register-form-icons" width="20" height="20">
-					<use class="icon-checked" href="./images/sprite.svg#checked"></use>
-					<use class="icon-unchecked" href="./images/sprite.svg#unchecked"></use>
-				  </svg>
 				  <span class="register-form-desc">
-					I agree with the mailing and accept
-					<a class="register-form-link" href="" target="_blank">the Terms of the Agreement</a>
+					Погоджуюся з розсилкою та приймаю 
+					<a class="register-form-link" href="" target="_blank">Умови договору</a>
 				  </span>
 				</label>
-	  
 				<button class="register-form-btn btn" type="submit">Відправити</button>
 			  </form>
 			</div>
