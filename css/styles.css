@@ -1019,6 +1019,7 @@ textarea {
 	font-size: 14px;
 	line-height: 16px;
 	letter-spacing: 0.03em;
+	margin-left: 0;
 	text-transform: uppercase;
 	color: #FFFFFF;
 }
