@@ -99,6 +99,7 @@ textarea {
 	font-size: inherit;
 	border: none;
 	resize: none;
+	padding: 12px 16px;
 }
 
 .container {
@@ -132,6 +133,18 @@ body {
 	opacity: 0.8;
 }
 
+.studio {
+	margin-left: 93px;
+}
+
+.current {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	color: #212121;
+}
+
 .header__inner {
 	display: flex;
 	align-items: center;
@@ -139,7 +152,7 @@ body {
 }
 
 .header a {
-	transition: color 250ms linear;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 nav:active {
@@ -167,7 +180,6 @@ nav:active {
 /* logo */
 .logo {
 	display: inline-block;
-	padding-right: 93px;
 	font-family: var(--secondary-font);
 	font-weight: 700;
 	font-size: 26px;
@@ -194,7 +206,7 @@ nav:active {
 	fill: currentColor;
 	height: 16px;
 	align-items: center;
-	transition: color 250ms linear;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link {
     color: grey;
@@ -323,7 +335,7 @@ nav:active {
 }
 
 .hero a{
-	transition: color 250ms linear;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -369,7 +381,7 @@ nav:active {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.2);
-	transition: opacity 250ms linear;
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
 .backdrop.is-hidden {
@@ -384,11 +396,12 @@ nav:active {
 	left: 30%;
 	width: 528px;
 	min-height: 561px;
-	background-color: #fafafa;
+	background-color: var(--main-bg-cl);
 	border-radius: 4px;
 	top: 50%; 
 	left: 50%; 
 	transform: translate(-50%, -50%); 
+	padding: 40px;;
 }
   
 .close {
@@ -408,7 +421,8 @@ nav:active {
 	background-color: var(--main-bg-cl);
 }
 
-.modal:focus ~ .close{
+.close:hover
+.close:focus{
 	fill: #2196F3;
 }
 
@@ -428,14 +442,7 @@ nav:active {
 }
 
 .register-form {
-	position: absolute;
-	width: 448px;
-	height: 342px;
-	left: 40px;
-	top: 30px;
-	font: var(--main-font);
 	letter-spacing: 0.01em;
-	color: #757575;
 }
 
 .register-form-group {
@@ -478,8 +485,8 @@ nav:active {
 	border-radius: 4px;
 }
   
-.register-form-field:focus ~ .register-form-input {
-	border: #2196f3;
+.register-form-input:focus  {
+	border: 1px solid rgba(33, 150, 243, 0.9);
 }
 
 .register-form-input:focus ~ .register-form-icon {
@@ -504,11 +511,15 @@ nav:active {
 	display: block;
   	width: 100%;
   	height: 130px;
-  	padding: 0;
+  	padding: 16px;
  	font-size: 14px;
   	resize: none;
   	outline: transparent;
 	color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-textarea::placeholder {
+	padding: 0;
 }
 
 .register-form-icon {
@@ -523,7 +534,7 @@ nav:active {
 .register-form-icon:focus
 .register-form-icon::placeholder{
 	fill: #2196f3;
-	transition: fill 250ms linear;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
 .register-form-notification {
@@ -560,32 +571,38 @@ nav:active {
   }
   
   .register-form-desc {
-	font-size: 13px;
+	font-size: 14px;
 	user-select: none;
 }
   
 .register-form-link {
 	color: #2196f3;
+	text-decoration: underline;
 }
   
 .register-form-btn {
 	display: flex;
+	font-weight: 700;
 	margin: 0 auto;
-	margin-top: -5px;
 	width: 200px;
-	height: 65px;
+	height: 50px;
 	padding-left: 50px;
 	border-radius: 5px;
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.06em;
-	background-color: var(--button-bg-cl);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	background: var(--button-bg-cl);
 	color: var(--light-txt-cl);
+}
+
+.register-form-btn:focus {
+	background: #188CE8;
 }
 
 .register-form-checkbox:checked + .register-form-agreement {
 	color: #2196f3;
-  }
+}
 
 /*  input modal  */
 
@@ -827,7 +844,7 @@ textarea {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: background-color 250ms linear, fill 250ms linear;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon-media svg {
@@ -863,7 +880,7 @@ textarea {
 	justify-content: center;
 	min-height: 92px;
 	fill: #AFB1B8;
-	transition: border 250ms linear, fill 250ms linear;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients__item:hover {
@@ -902,19 +919,18 @@ textarea {
 .buttons .btn {
 	color: var(--second-txt-cl);
 	background-color: var(--third-bg-cl);
-	transition: color 250ms linear, background-color 250ms linear;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons .btn:hover,
 .buttons .btn:focus {
 	color: var(--light-txt-cl);
 	background-color: var(--button-bg-cl);
-	
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);	
 }
 
 /* projects */
 .projects-card-title {
-	font-weight: 700;
 	font-size: 18px;
 	line-height: calc(36/18);
 	letter-spacing: 0.04em;
@@ -943,7 +959,7 @@ textarea {
 
 .footer__logo {
 	display: block;
-	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .footer-contacts {
@@ -969,9 +985,6 @@ textarea {
 	text-decoration: none;
 }
 
-.footer__inner {
-	margin-right: 70px;
-}
 
 .footer-contacts .cont {
 	font-style: normal;
@@ -1015,7 +1028,7 @@ textarea {
 }
 
 .footer_social {
-transition: background-color 250ms linear, fill 250ms linear;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_social:hover {
@@ -1028,7 +1041,7 @@ transition: background-color 250ms linear, fill 250ms linear;
 }
 
 .footer a {
-	transition:	 color 250ms linear;
+	transition:	 color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contacts .cont:hover,
@@ -1050,6 +1063,7 @@ transition: background-color 250ms linear, fill 250ms linear;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 16px;
+	margin-bottom: 15px;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: #FFFFFF;
@@ -1057,10 +1071,10 @@ transition: background-color 250ms linear, fill 250ms linear;
 
 .footer-send-btn {
 	padding: 10px 28px;	
+	font-weight: 700;
 	width: 200px;
 	height: 50px;
-	margin-top: 15px;
-	margin-left: 10px;
+	margin-left: 15px;
 	background-color: var(--button-bg-cl);
 	border-radius: 5px;
 	display: flex;
@@ -1080,7 +1094,7 @@ transition: background-color 250ms linear, fill 250ms linear;
 
 .icon-send {
 	margin-left: 10px;
-	fill: #EEEEEE;
+	fill: #FFFFFF;
 }
 
 .label-send {
@@ -1097,7 +1111,6 @@ transition: background-color 250ms linear, fill 250ms linear;
 .input-field-send {
 	padding: 15px;
 	width: 358px;
-	margin-top: 15px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
@@ -1163,7 +1176,7 @@ transition: background-color 250ms linear, fill 250ms linear;
 .filter {
 	border-radius: 4px;
 	padding: 6px 22px;
-	transition: box-shadow 250ms linear;
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter:hover
@@ -1201,7 +1214,7 @@ transition: background-color 250ms linear, fill 250ms linear;
 
 .shop_card {
 	display:block;
-	transition: box-shadow 250ms linear;
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .shop_overlay {
@@ -1225,11 +1238,6 @@ transition: background-color 250ms linear, fill 250ms linear;
 
 .shop_card:hover .overlay {
 	transform: translateY(-100%);
-}
-
-.overlay {
-	margin:auto;
-	transition: 250ms linear;
 }
 
 .shop_overlay:hover
