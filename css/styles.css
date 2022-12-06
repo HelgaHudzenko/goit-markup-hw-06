@@ -421,7 +421,6 @@ nav:active {
 	background-color: var(--main-bg-cl);
 }
 
-.close:hover
 .close:focus{
 	fill: #2196F3;
 }
